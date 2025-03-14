@@ -55,7 +55,7 @@ const SubmitButton = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #007bff;
+  background-color: rgb(204, 192, 206);
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -65,7 +65,7 @@ const SubmitButton = styled.button`
     border: 4px solid #ccc;
     border-radius: 5px;
     transition: border 0.2s ease;
-    background-color: #0056b3;
+    background-color: rgb(204, 192, 206);
   }
 `
 
@@ -109,7 +109,7 @@ const InputWithTooltip = styled.div`
 `
 
 const ErrorMessage = styled.span<{ visible: boolean }>`
-  color: red;
+  color: rgb(204, 192, 206);
   font-size: 16px;
   margin-top: 6px;
   visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
@@ -157,11 +157,12 @@ export const LoginForm: React.FC<{}> = () => {
             name="email"
             required
             aria-required="true"
-            aria-label="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onFocus={(e) => console.log('focus', e.target)}
+            style={{ color: '#C8C8C8', backgroundColor: '#F8F8F8' }}
+            role="listbox"
           />
         </InputWrapper>
       </InputWithTooltip>
@@ -181,6 +182,8 @@ export const LoginForm: React.FC<{}> = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             onFocus={(e) => console.log('focus', e.target)}
+            style={{ color: '#C8C8C8', backgroundColor: '#F8F8F8' }}
+            role="listbox"
           />
         </InputWrapper>
       </InputWithTooltip>
