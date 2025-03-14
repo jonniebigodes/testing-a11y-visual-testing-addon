@@ -1,7 +1,7 @@
 import { StorybookConfig } from '@storybook/react-vite'
 
 const config: StorybookConfig = {
-   stories: [
+  stories: [
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: [
@@ -16,6 +16,9 @@ const config: StorybookConfig = {
   },
   staticDirs: ['../public'],
   framework: '@storybook/react-vite',
-  docs: {}
+  docs: {},
+  core: {
+    disableWhatsNewNotifications: true,
+  }
 }
 export default config
