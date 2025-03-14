@@ -55,7 +55,7 @@ const SubmitButton = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #007bff;
+  background-color: rgb(5, 40, 78);
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -65,7 +65,7 @@ const SubmitButton = styled.button`
     border: 4px solid #ccc;
     border-radius: 5px;
     transition: border 0.2s ease;
-    background-color: #0056b3;
+    background-color: rgb(5, 40, 78);
   }
 `
 
